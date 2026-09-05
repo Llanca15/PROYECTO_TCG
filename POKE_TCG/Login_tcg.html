@@ -42,8 +42,14 @@
                     required>
             </div>
             <div class="d-flex justify-content-end mx-3">
-                <button class="btn btn-danger btn-lg" type="submit">Confirmar</button>
+                <button id="confirmar" class="btn btn-danger btn-lg" type="button">Confirmar</button>
             </div>
+            
+            <script>
+                document.getElementById("confirmar").addEventListener("click", () => {
+                    window.location.href = "admin_tcg.html";    
+                });
+            </script>
         </div>
     </form>
 </body>
