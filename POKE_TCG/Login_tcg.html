@@ -19,10 +19,10 @@
         <img src="image/Pokémon_Trading_Card_Game_logo_logo.svg.webp" width="400" height="200" alt="Logo de pokemon"
             style="display: block; margin-left: auto; margin-right: auto;">
         <nav class="menu">
-            <a href="pokemon_tcg.html">  INICIO  </a>
-            <a href="productos_tcg.html">  PRODUCTOS  </a>
-            <a href="contacto_tcg.html">  CONTACTO  </a>
-            <a href="Login_tcg.html">  INICIAR SESIÓN  </a>
+            <a href="pokemon_tcg.html"> INICIO </a>
+            <a href="productos_tcg.html"> PRODUCTOS </a>
+            <a href="contacto_tcg.html"> CONTACTO </a>
+            <a href="Login_tcg.html"> INICIAR SESIÓN </a>
         </nav>
     </header>
     <form class="bg-white p-4 rounded shadow-sm mx-auto border border-danger" action="#" method="post">
@@ -45,12 +45,21 @@
                     required>
             </div>
             <div class="d-flex justify-content-end mx-3">
-                <button id="confirmar" class="btn btn-danger btn-lg" type="button">Confirmar</button>
+                <button id="confirmar" class="btn btn-danger btn-lg" type="submit">Confirmar</button>
             </div>
-            
+
             <script>
-                document.getElementById("confirmar").addEventListener("click", () => {
-                    window.location.href = "admin_tcg.html";    
+                document.getElementById("confirmar").addEventListener("click", (e) => {
+                    e.preventDefault();
+
+                    const correo = document.getElementById("correo").value;
+                    const contrasena = document.getElementById("contrasena").value;
+
+                    if (correo === "admin@tcg.cl" && contrasena === "tcgchampion") {
+                        window.location.href = "admin_tcg.html";
+                    } else {
+                        window.location.href = "pokemon_tcg.html";
+                    }
                 });
             </script>
         </div>
