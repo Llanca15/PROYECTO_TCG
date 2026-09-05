@@ -63,7 +63,7 @@ article {
 article:hover {
     transform: translateY(-6px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-    border-color: #ffcb05;
+    border-color: #ff0505;
 }
 
 article img {
