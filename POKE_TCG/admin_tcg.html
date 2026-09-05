@@ -16,12 +16,26 @@
 <header>
     <h1>Bienvenido Admin!</h1>
 </header>
+
 <body>
     <nav class="menu">
         <a href="pokemon_tcg.html"> INICIO </a>
         <a href="productos_tcg.html"> PRODUCTOS </a>
         <a href="contacto_tcg.html"> CONTACTO </a>
     </nav>
+
+    <section id ="Manejar_inventario">
+        <form id="formProducto" class="mb-4">
+            <h3>Agregar nuevo producto</h3>
+            <input type="text" id="nombreProducto" placeholder="Nombre" class="form-control mb-2" required>
+            <input type="number" id="precioProducto" placeholder="Precio" class="form-control mb-2" required>
+            <input type="text" id="imagenProducto" placeholder="URL de imagen" class="form-control mb-2" required>
+            <button type="submit" class="btn btn-danger">Agregar producto</button>
+        </form>
+
+
+
+    </section>
 
 
 </body>

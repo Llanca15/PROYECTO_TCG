@@ -38,3 +38,10 @@ body{
     color: #ffcb05;
     background-color: rgba(255, 255, 255, 0.15);
 }
+
+#Manejar_inventario {
+    
+    padding: 40px 20px;
+    background-color: beige;
+    
+}
