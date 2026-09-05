@@ -4,10 +4,9 @@
 
 /* Estructura del contenedor superior */
 header {
-    /* Color de fondo rojo oscuro del encabezado */
-    background-color: darkred;
-    /* Centra horizontalmente el contenido interno */
-    text-align: center;
+    background: linear-gradient(180deg, #b71c1c 0%, #880e4f 100%);
+    padding: 20px 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 }
 
 /* ==========================================

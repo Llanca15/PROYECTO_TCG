@@ -28,14 +28,9 @@ body {
 
 /* Estructura del contenedor superior */
 header {
-    /* Color de fondo rojo oscuro del encabezado */
-    background-color: darkred;
-    /* Centra horizontalmente todo el contenido interno (texto, navegación) */
-    text-align: center;
-    /* Espaciado interno: 25px arriba, 15px a los lados, 15px abajo */
-    padding: 25px 15px 15px;
-    /* Sombra inferior sutil para darle profundidad y despegarlo del fondo */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(180deg, #b71c1c 0%, #880e4f 100%);
+    padding: 20px 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 }
 
 /* Título dentro del Header */
