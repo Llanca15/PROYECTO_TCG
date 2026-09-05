@@ -9,52 +9,38 @@ header {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 }
 
+body {
+    font-family: 'Outfit', system-ui, -apple-system, sans-serif;
+    background-color: beige;
+    color: #222;
+}
+
 /* ==========================================
    MENÚ DE NAVEGACIÓN
    ========================================== */
 
 /* Contenedor principal de los enlaces del menú */
 .menu {
-    /* Margen de 10px arriba/abajo y 0 a los lados */
-    margin: 10px 0;
-    /* Activa Flexbox para organizar los enlaces en línea */
     display: flex;
-    /* Centra horizontalmente los enlaces dentro del contenedor */
     justify-content: center;
-    /* Alinea verticalmente los elementos al centro */
     align-items: center;
-    /* Permite que los enlaces pasen a una nueva línea en pantallas pequeñas */
     flex-wrap: wrap;
-    /* Espacio o separación constante de 10px entre cada enlace */
-    gap: 10px;
+    gap: 15px;
 }
 
-/* Enlaces individuales dentro del menú */
 .menu a {
-    /* Color de texto blanco suave */
-    color: whitesmoke;
-    /* Elimina el subrayado por defecto de las etiquetas <a> */
+    color: #ffffff;
     text-decoration: none;
-    /* Margen lateral de 10px para separar los enlaces */
-    margin: 0 10px;
-    /* Tamaño del texto del enlace */
-    font-size: 1.1rem;
-    /* Grosor del texto (semi-negrita) */
+    font-size: 1rem;
     font-weight: 600;
-    /* Relleno interno: 5px arriba/abajo, 10px a los lados */
-    padding: 5px 10px;
-    /* Bordes ligeramente redondeados para el área interactiva */
-    border-radius: 5px;
-    /* Animación suave de 0.25s al cambiar color y fondo al pasar el cursor */
-    transition: color 0.25s ease, background-color 0.25s ease;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
 }
 
-/* Estado interactivo al pasar el cursor sobre un enlace */
 .menu a:hover {
-    /* Cambia el color del texto a amarillo Pokémon */
     color: #ffcb05;
-    /* Agrega un fondo blanco semitransparente al hacer hover */
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.15);
 }
 
 /* ==========================================
