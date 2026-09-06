@@ -42,6 +42,8 @@ header h2 {
     text-transform: uppercase;
     /* Espaciado adicional entre cada letra */
     letter-spacing: 1px;
+
+    text-align: center;
 }
 
 /* ==========================================
