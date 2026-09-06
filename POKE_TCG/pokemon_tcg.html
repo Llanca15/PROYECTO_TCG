@@ -24,6 +24,12 @@
             <a href="productos_tcg.html">  PRODUCTOS  </a>
             <a href="contacto_tcg.html">  CONTACTO  </a>
             <a href="Login_tcg.html">  INICIAR SESIÓN  </a>
+
+    <!-- Espacio para el usuario (inicialmente oculto) -->
+            <span id="user-info" style="color: white; margin-left: 15px; display: none;">
+        👤          <strong id="nombre-usuario"></strong> 
+                <button onclick="cerrarSesion()" class="btn btn-sm btn-outline-light ms-2" style="font-size: 12px; padding: 2px 6px;">Salir</button>
+            </span>
         </nav>
     </header>
     <main>
@@ -39,11 +45,35 @@
         </section>
     </main>
 
-    <footer>
-        <section>
-        </section>
-    </footer>
 
+
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            const usuarioActivo = localStorage.getItem('usuario_activo');
+            const linkLogin = document.getElementById('link-login');
+            const userInfo = document.getElementById('user-info');
+            const nombreUsuario = document.getElementById('nombre-usuario');
+
+            if (usuarioActivo) {
+                // Si el usuario ha iniciado sesión: ocultamos el login y mostramos su nombre
+                if (linkLogin) linkLogin.style.display = 'none';
+                if (userInfo && nombreUsuario) {
+                    nombreUsuario.textContent = usuarioActivo;
+                    userInfo.style.display = 'inline-block';
+                }
+            } else {
+                // Si NO hay sesión activa (o se acaba de cerrar): mostramos el login y ocultamos el usuario
+                if (linkLogin) linkLogin.style.display = 'inline-block';
+                if (userInfo) userInfo.style.display = 'none';
+            }
+        });
+
+        // Función para cerrar sesión
+        function cerrarSesion() {
+            localStorage.removeItem('usuario_activo');
+            window.location.reload(); // Recarga la página para restablecer el menú
+        }
+    </script>
 </body>
 <footer class="text-white text-center py-4 mt-5">
     <div class="container">
