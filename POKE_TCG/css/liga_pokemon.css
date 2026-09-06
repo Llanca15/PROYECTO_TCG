@@ -93,3 +93,27 @@ article p {
     margin-bottom: 15px;
     flex-grow: 1;
 }
+
+#aboutUs {
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+    background: white;
+    padding: 30px;
+}
+
+#aboutUs h2 {
+    color: #bb2a2a; /* Azul clásico de Pokémon */
+    margin-bottom: 20px;
+}
+
+#aboutUs p {
+    color: #000000;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+main {
+    padding: 40px 20px;
+    background-color: beige;
+}
