@@ -194,3 +194,7 @@ article p:last-child {
     /* Borde punteado color amarillo Pokémon */
     border: 1px dashed #ffcb05;
 }
+
+footer {
+    background: linear-gradient(180deg, #880e4f 0%, #b71c1c 100%);
+}

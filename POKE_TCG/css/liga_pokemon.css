@@ -117,3 +117,7 @@ main {
     padding: 40px 20px;
     background-color: beige;
 }
+
+footer {
+    background: linear-gradient(180deg, #880e4f 0%, #b71c1c 100%);
+}
